@@ -31,7 +31,7 @@ if __name__ == '__main__':
     if poem_btn:
         with st.spinner('Wait for it...'):
             poem_info = get_poem("Rupi Kaur")
-            st.session_state.poem = poem_info["poem"]
+            st.session_state.poem = poem_info["poem"].lower()
             st.session_state.real_bool = poem_info["real_bool"]
             st.session_state.guessed = False
 
