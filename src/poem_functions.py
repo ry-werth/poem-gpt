@@ -14,7 +14,7 @@ def fake_poem(poet):
 
     response = openai.Completion.create(
         model="text-davinci-003",
-        prompt=f"Write a poem in the style of {poet} without rhyming",
+        prompt=f"Write a poem in the style of {poet} less than 100 words",
         temperature=0.7,
         max_tokens=100,
         top_p=1,
